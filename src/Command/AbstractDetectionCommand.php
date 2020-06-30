@@ -21,6 +21,7 @@ use Cmsgarden\Cmsscanner\Detector\Adapter\MsdAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\NextcloudAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\PhpMyAdminAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\PivotxAdapter;
+use Cmsgarden\Cmsscanner\Detector\Adapter\PlaceholderPageAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\MatomoAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\PrestashopAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\RedaxoAdapter;
@@ -61,6 +62,7 @@ abstract class AbstractDetectionCommand extends Command
             ->addAdapter(new NextcloudAdapter())
             ->addAdapter(new PhpmyadminAdapter())
             ->addAdapter(new PivotxAdapter())
+            ->addAdapter(new PlaceholderPageAdapter())
             ->addAdapter(new MatomoAdapter())
             ->addAdapter(new PrestashopAdapter())
             ->addAdapter(new RedaxoAdapter())
