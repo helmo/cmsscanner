@@ -15,6 +15,7 @@ use Cmsgarden\Cmsscanner\Detector\Adapter\ContaoAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\ContenidoAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\DrupalAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\GambioAdapter;
+use Cmsgarden\Cmsscanner\Detector\Adapter\GenericPhpAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\JoomlaAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\MagentoAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\MsdAdapter;
@@ -57,6 +58,7 @@ abstract class AbstractDetectionCommand extends Command
             ->addAdapter(new ContenidoAdapter())
             ->addAdapter(new DrupalAdapter())
             ->addAdapter(new GambioAdapter())
+#            ->addAdapter(new GenericPhpAdapter())
             ->addAdapter(new JoomlaAdapter())
             ->addAdapter(new MagentoAdapter())
             ->addAdapter(new MsdAdapter())
