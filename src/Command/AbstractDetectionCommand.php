@@ -26,6 +26,7 @@ use Cmsgarden\Cmsscanner\Detector\Adapter\MatomoAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\PrestashopAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\RedaxoAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\ShopwareAdapter;
+use Cmsgarden\Cmsscanner\Detector\Adapter\StaticHtmlAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\Typo3CmsAdapter;
 use Cmsgarden\Cmsscanner\Detector\Adapter\WordpressAdapter;
 use Symfony\Component\Console\Command\Command;
@@ -67,6 +68,7 @@ abstract class AbstractDetectionCommand extends Command
             ->addAdapter(new PrestashopAdapter())
             ->addAdapter(new RedaxoAdapter())
             ->addAdapter(new ShopwareAdapter())
+            ->addAdapter(new StaticHtmlAdapter())
             ->addAdapter(new Typo3CmsAdapter())
             ->addAdapter(new WordpressAdapter())
             ->addAdapter(new DrupalAdapter())
